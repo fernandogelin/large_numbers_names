@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Number Names</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet" media="screen">
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,700,100' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=1">    
+</head>
+<body>
+    <div>
+        <h1>Large Number Names</h1>
+    </div>
+    <div class="container">
+        <form role="form">
+          <div class="form-group">
+            <input type="text" class="form-control" name="number_input" placeholder="Enter number">
+          </div>
+          <div class="form-group">
+              <textarea class="form-control" name="number_output" disabled="disabled"></textarea>
+          </div>      
+        </form>
+    </div>
+    <div class="footer">
+        <div id="footnote">
+    		<p>Designed and Developed by L. Fernando Gelin</p>
+        </div>
+    </div>
+	<script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="js/number_to_text.js"></script>
+    <script>
+    $('[name="number_input"]').on('keyup', function() {
+        var value = $(this).val(),
+            number = LargeNumbersNames(value);
+        $('[name="number_output"]').text(number);
+    });
+    </script>
+</body>
+</html>

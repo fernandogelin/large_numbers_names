@@ -1,0 +1,49 @@
+body {
+  background-color:#3788C1;
+  margin-top: 10em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif; 
+	font-weight: lighter;
+	font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: white;
+}
+h1 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px #fff;
+  text-align: center;
+  color: black;
+  padding-bottom: 50px;
+  font-size: 60px;
+}
+.form-group {
+  width: 75%;
+}
+.container {
+	text-align:center;
+	float:none;
+  margin-left: 20%;
+  margin-bottom: 10%;
+}
+.form-control {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif; 
+	font-weight: lighter;
+	font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+	font-size:30px;
+  height: 70px;
+  color:gray;
+  border-radius: 0;
+}
+.form-control:focus {
+	background-color: white;
+}
+textarea.form-control {
+  height: 300px;
+}
+#footnote {
+  text-align: center;
+  color: white;
+}
